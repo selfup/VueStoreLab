@@ -2,7 +2,7 @@
 
 JavaScript State Tree Plugin for Vue!
 
-Example jsfiddle: https://jsfiddle.net/selfup/zhcw48mq
+**Example Repo with `vue-cli`:** https://github.com/selfup/vue-store-lab-example-repo
 
 ### Installation/Usage
 
@@ -18,8 +18,6 @@ This is transpiled to ES5 from ES6 so any modern Node version will work :smile:
 `npm install vue-store-lab --save`
 
 Example Code on jsfiddle with source code in there: https://jsfiddle.net/selfup/kxt4drd5/
-
-Example Repo with `vue-cli`: https://github.com/selfup/vue-store-lab-example-repo
 
 Example Code here:
 
