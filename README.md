@@ -19,6 +19,8 @@ This is transpiled to ES5 from ES6 so any modern Node version will work :smile:
 
 Example Code on jsfiddle with source code in there: https://jsfiddle.net/selfup/kxt4drd5/
 
+Example Repo with `vue-cli`: https://github.com/selfup/vue-store-lab-example-repo
+
 Example Code here:
 
 ```javascript
