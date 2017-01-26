@@ -1,7 +1,5 @@
 'use strict';
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /* eslint-disable no-param-reassign, linebreak-style */
@@ -13,7 +11,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  * Released under the MIT License.
  */
 
-var VUE_STORELAB_ERROR = 'StoreLab: Please Return An Object Literal :D';
+var StoreLab = require('store-lab');
 
 var VueStoreLab = function VueStoreLab() {
   var _this = this;
@@ -23,18 +21,10 @@ var VueStoreLab = function VueStoreLab() {
 
   _classCallCheck(this, VueStoreLab);
 
-  this.state = state;
-  this.actions = actions;
-
-  this.dispatch = function (action, data) {
-    var newMergeData = _this.actions[action](_this.state, data);
-    if ((typeof newMergeData === 'undefined' ? 'undefined' : _typeof(newMergeData)) !== 'object') throw Error(VUE_STORELAB_ERROR);
-    Object.assign(_this.state, newMergeData);
-  };
-
+  this.internal = new StoreLab(state, actions);
   this.install = function (Vue) {
-    Vue.prototype.VueStoreLabState = _this.state;
-    Vue.prototype.dispatch = _this.dispatch;
+    Vue.prototype.VueStoreLabState = _this.internal.state;
+    Vue.prototype.dispatch = _this.internal.dispatch;
   };
 };
 
