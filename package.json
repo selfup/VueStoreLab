@@ -1,6 +1,6 @@
 {
   "name": "vue-store-lab",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "JavaScript State Tree Plugin for Vue",
   "main": "index.js",
   "scripts": {
