@@ -20,7 +20,3 @@ This is transpiled to ES5 from ES6 so any modern Node version will work :smile:
 ### Exceptions
 
 You might need a polyfill for `Object.assign` :joy:
-
-### DISCLAIMER
-
-This is a continuation of reegux/vue-reegux/controllux
